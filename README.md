@@ -9,18 +9,15 @@
 
   <a href="">![stars](https://img.shields.io/github/stars/gtamilvanan17/cdops-blogs)</a>
   <a href="">![forks](https://img.shields.io/github/forks/gtamilvanan17/cdops-blogs)</a>
+  <br>
   <a href="">![issues](https://img.shields.io/github/issues/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-closed/gtamilvanan17/cdops-blogs)</a>
   <a href="">![last commit](https://img.shields.io/github/last-commit/gtamilvanan17/cdops-blogs)</a>
-  <a href="">![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/gtamilvanan17/cdops-blogs/master)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr-closed/gtamilvanan17/cdops-blogs)</a>
   <a href="">![Website](https://img.shields.io/website?url=https%3A%2F%2Fgtamilvanan17.github.io%2Fcdops-blogs)
 </a>
 </div>
-
-# About
-This site is purely about posting blogs related to linux, devops, cloud computing, networking and all about technologies.
 
 > ### Follow us on below mediums.
 > - [Instagram](https://instagram.com/cdops_official)
