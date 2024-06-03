@@ -1,8 +1,8 @@
 # About
 <!-- This is the demo site for [Fuwari](https://github.com/saicaca/fuwari). -->
-This site is purely about posting blogs related to linux, devops, cloud computing, networking and all about technologies.
+```CD OPS``` is a platform/website🌐 for posting blogs/writeups/docs📝 related to linux, devops, cloud-computing, networking and all about technology💻.
 
-::github{repo="gtamilvanan17/blog"}
+::github{repo="gtamilvanan17/cdops-blogs"}
 
 <!-- > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
@@ -11,8 +11,7 @@ This site is purely about posting blogs related to linux, devops, cloud computin
 
 > ### Follow us on below mediums.
 > - [Instagram](https://instagram.com/cdops_official)
-> - [Hashnode](#)
-> - [Medium](#)
-> - [Hashnode](#)
+> - [Hashnode](https://cdops1official.hashnode.dev/)
+> - [Medium](https://cdops1official.medium.com/)
 > - [Linked In](https://linkedin.com/in/gtamilvanan17)
 > - [Twitter](https://x.com/GTamilvananOff)
