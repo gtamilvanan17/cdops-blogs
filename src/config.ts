@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'CD OPS',
-  subtitle: 'Cloud and Devops | Blogs',
+  subtitle: 'Cloud and Devops',
   lang: 'en', // 'en', 'zh_CN', 'zh_TW', 'ja'
   themeColor: {
     hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -44,7 +44,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/image.png', // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'CD OPS',
-  bio: 'The Internet has no eraser.',
+  bio: 'Cheers, Happy Learning!',
   links: [
     // You will need to install the corresponding icon set if it's not already included
     // `pnpm add @iconify-json/<icon-set-name>`
@@ -64,6 +64,11 @@ export const profileConfig: ProfileConfig = {
       name: 'Instagram',
       icon: 'fa6-brands:instagram',
       url: 'https://instagram.com/cdops_official',
+    },
+    {
+      name: 'Portfolio',
+      icon: 'fa6-solid:address-card',
+      url: 'https://gtamilvanan17.github.io/portfolio',
     },
   ],
 }
