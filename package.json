@@ -1,7 +1,8 @@
 {
-  "name": "fuwari",
+  "name": "cdops-blogs",
+  "description": "The official GitHub repository for this website.",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -35,6 +36,7 @@
     "mdast-util-to-string": "^4.0.0",
     "overlayscrollbars": "^2.6.1",
     "pagefind": "^1.0.4",
+    "pnpm": "^9.1.4",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-components": "^0.3.0",
