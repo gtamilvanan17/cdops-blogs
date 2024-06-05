@@ -7,6 +7,11 @@ tags: [linux, python]
 category: 'Linux'
 draft: false 
 ---
+<br>
+
+:::important
+All the tutorials/steps provided here is only for educational purpose. Use/practise them wisely.
+:::
 
 ### Set default version for python in debina/ubuntu machines.
 1. Check Installed Python Version
