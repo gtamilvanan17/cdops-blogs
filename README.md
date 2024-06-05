@@ -15,8 +15,8 @@
   <a href="">![last commit](https://img.shields.io/github/last-commit/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr-closed/gtamilvanan17/cdops-blogs)</a>
-  <a href="">![Website](https://img.shields.io/website?url=https%3A%2F%2Fgtamilvanan17.github.io%2Fcdops-blogs)
-</a>
+  <a href="">![Website](https://img.shields.io/website?url=https%3A%2F%2Fgtamilvanan17.github.io%2Fcdops-blogs)</a>
+  <a href="">
 </div>
 
 > ### Follow us on below mediums.
@@ -25,3 +25,7 @@
 > - [Medium](https://cdops1official.medium.com/)
 > - [Linked In](https://linkedin.com/in/gtamilvanan17)
 > - [Twitter](https://x.com/GTamilvananOff)
+
+### License
+
+**CDOPS** is licensed under the **[MIT License](LICENSE)**.
