@@ -38,6 +38,16 @@ export const navBarConfig: NavBarConfig = {
     //   url: 'https://github.com/saicaca/fuwari', // Internal links should not include the base path, as it is automatically added
     //   external: true, // Show an external link icon and will open in a new tab
     // },
+    {
+      name: 'Hashnode',
+      url: 'https://cdops1official.hashnode.dev/', // Internal links should not include the base path, as it is automatically added
+      external: true, // Show an external link icon and will open in a new tab
+    },
+    {
+      name: 'Medium',
+      url: 'https://cdops1official.medium.com/', // Internal links should not include the base path, as it is automatically added
+      external: true, // Show an external link icon and will open in a new tab
+    },
   ],
 }
 
@@ -69,6 +79,11 @@ export const profileConfig: ProfileConfig = {
       name: 'Portfolio',
       icon: 'fa6-solid:address-card',
       url: 'https://gtamilvanan17.github.io/portfolio',
+    },
+    {
+      name: 'E-Mail',
+      icon: 'fa6-solid:envelope',
+      url: 'mailto:cdops1official@gmail.com',
     },
   ],
 }

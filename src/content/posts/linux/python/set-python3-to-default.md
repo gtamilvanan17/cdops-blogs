@@ -49,5 +49,8 @@ python --version
 ```
 
 :::note
-`By following these steps, you can ensure that the python command on your Ubuntu system points to your desired Python 3 version. This can help standardize scripts and commands that rely on the python command, ensuring they use the correct Python interpreter.`
+By following these steps, you can ensure that the python command on your Ubuntu system points to your desired Python 3 version. This can help standardize scripts and commands that rely on the python command, ensuring they use the correct Python interpreter.
 :::
+
+### Conclusion
+That's it! You've learnt, how to setup the default version for python in linux machines. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
