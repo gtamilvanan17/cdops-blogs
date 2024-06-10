@@ -1,10 +1,10 @@
-name: Deploy to GitHub Pages
+name: Actions-Workflow
 
-on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
-  push:
-    branches: [master]
+# on:
+#   # Trigger the workflow every time you push to the `main` branch
+#   # Using a different branch name? Replace `main` with your branch’s name
+#   push:
+#     branches: [master]
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
@@ -13,25 +13,68 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build_the_app:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v2
-        with:
-            path: . # The root location of your Astro project inside the repository. (optional)
-            node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-            package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+    - name: Checkout your repository using git
+      uses: actions/checkout@v4
 
-  deploy:
-    needs: build
+    - name: Listing the datas
+      run: |
+        pwd
+        ls -lla
+
+    - name: Install, build, and upload your site output
+      uses: withastro/action@v2
+      with:
+        path: . # The root location of your Astro project inside the repository. (optional)
+        node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
+        package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+
+  deploy_the_app:
+    needs: build_the_app
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+  docker_push:
+    needs: deploy_the_app
+    runs-on: ubuntu-latest
+
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASS_TOKEN }}
+      DOCKER_IMAGE_NAME: cdopsblog
+
+    steps:
+    - name: Checkout your repository using git
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Listing images and Containers.
+      run: docker images && docker ps -a
+
+    - name: Login to Docker Hub
+      run: echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+
+    - name: Listing images and Containers.
+      run: docker images && docker ps -a
+
+    - name: Build and Push docker image
+      run: docker build -t "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER . && docker push "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER
+
+    - name: Tag and push latest image to Docker Hub
+      run: docker tag "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":latest && docker push "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":latest
+
+    - name: Listing images and Containers.
+      run: docker images && docker ps -a
+
+    - name: Docker Logout
+      run: docker logout

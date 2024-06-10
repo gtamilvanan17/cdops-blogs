@@ -7,16 +7,16 @@
 
 <div align="center">
 
+  <a href="">[![Actions](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/workflow.yml/badge.svg?branch=master)](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/workflow.yml)</a>
   <a href="">![stars](https://img.shields.io/github/stars/gtamilvanan17/cdops-blogs)</a>
   <a href="">![forks](https://img.shields.io/github/forks/gtamilvanan17/cdops-blogs)</a>
-  <br>
   <a href="">![issues](https://img.shields.io/github/issues/gtamilvanan17/cdops-blogs)</a>
+<br>
   <a href="">![issues](https://img.shields.io/github/issues-closed/gtamilvanan17/cdops-blogs)</a>
   <a href="">![last commit](https://img.shields.io/github/last-commit/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues-pr-closed/gtamilvanan17/cdops-blogs)</a>
   <a href="">![Website](https://img.shields.io/website?url=https%3A%2F%2Fgtamilvanan17.github.io%2Fcdops-blogs)</a>
-  <a href="">
 </div>
 
 > ### Follow us on below mediums.

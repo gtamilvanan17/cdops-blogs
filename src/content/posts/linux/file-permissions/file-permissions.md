@@ -1,10 +1,10 @@
 ---
 title: File permissions in linux
 published: 2024-06-05
-description: ''
+description: 'All about file and directory modes and permissions'
 image: 'image.png'
-tags: []
-category: ''
+tags: [linux,perminssions]
+category: 'Linux'
 draft: false 
 ---
 :::important
@@ -39,3 +39,6 @@ drwxr-xr-x:  A directory that every user on the system can read and access
 drwxrwx---:  A directory that is modifiable (including its contents) by its owner and group
 drwxr-x---:  A directory that is accessible by its group
 ```
+
+### Conclusion
+That's it! You've learnt, what is file permissions and applications of them. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
