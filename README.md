@@ -1,7 +1,7 @@
 <p align="center">
   <img src="src/assets/images/Logo.png" alt="cdops-logo" width="200px" height="200px"/>
   <br><b>
-  CD OPS is a platform/website🌐 for posting blogs/writeups/docs📝 related to<br>linux, devops, cloud-computing, networking and all about technology💻.
+  CD OPS is a platform/website🌐 for posting blogs/writeups/docs📝 related to<br>linux, devops, cloud-computing, networking and all about technology💻
   <br>
 </p>
 
