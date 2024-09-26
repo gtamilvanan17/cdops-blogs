@@ -18,7 +18,7 @@ A static blog template built with [Astro](https://astro.build).
 
 <div align="center">
 
-  <a href="">[![Actions](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/cdops-github-workflow.yml/badge.svg?branch=master)](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/workflow.yml)</a>
+  <a href="">[![CDOPS GitHub DEV](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/cdops-github-workflow.yml/badge.svg)](https://github.com/gtamilvanan17/cdops-blogs/actions/workflows/cdops-github-workflow.yml)</a>
   <a href="">![stars](https://img.shields.io/github/stars/gtamilvanan17/cdops-blogs)</a>
   <a href="">![forks](https://img.shields.io/github/forks/gtamilvanan17/cdops-blogs)</a>
   <a href="">![issues](https://img.shields.io/github/issues/gtamilvanan17/cdops-blogs)</a>
