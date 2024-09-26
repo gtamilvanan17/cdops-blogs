@@ -6,7 +6,7 @@ The official GitHub repository for this website.
 ::github{repo="gtamilvanan17/cdops-blogs"}
 
 <p align="center">
-  <img src="/src/assets/images/logo.png" alt="cdops-logo" width="200px" height="200px"/>
+  <img src="https://github.com/gtamilvanan17/cdops-blogs/src/assets/images/logo.png" alt="cdops-logo" width="200px" height="200px"/>
   <a class="link text-[var(--primary)] font-medium" target="_blank" >CD OPS</a> is a platform/website🌐, where you can find blogs/writeups/docs📝 related to linux, devops, cloud-computing, networking and all about technology💻
   <br>
 </p>
