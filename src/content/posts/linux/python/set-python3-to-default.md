@@ -5,7 +5,7 @@ description: ''
 image: ''
 tags: [linux, python]
 category: 'Linux'
-draft: true
+draft: false
 ---
 <br>
 

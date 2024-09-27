@@ -5,7 +5,7 @@ description: 'Retrive wifi passwords in windows in terminal using netsh'
 image: 'image.png'
 tags: [windows,wifi]
 category: 'Windows'
-draft: true
+draft: false
 ---
 <br>
 

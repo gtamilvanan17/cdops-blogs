@@ -41,12 +41,12 @@ export const navBarConfig: NavBarConfig = {
     {
       name: 'Hashnode',
       url: 'https://cdops1official.hashnode.dev/', // Internal links should not include the base path, as it is automatically added
-      external: false, // Show an external link icon and will open in a new tab
+      external: true, // Show an external link icon and will open in a new tab
     },
     {
       name: 'Medium',
       url: 'https://cdops1official.medium.com/', // Internal links should not include the base path, as it is automatically added
-      external: false, // Show an external link icon and will open in a new tab
+      external: true, // Show an external link icon and will open in a new tab
     },
   ],
 }

@@ -5,7 +5,7 @@ description: ''
 image: 'image.png'
 tags: [linux,ngrok]
 category: 'Linux'
-draft: true
+draft: false
 ---
 <br>
 
