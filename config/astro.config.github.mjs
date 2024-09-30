@@ -31,8 +31,8 @@ const oklchToHex = str => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cdops.is-a.dev',
-  base: '/',
+  site: 'https://gtamilvanan17.github.io/',
+  base: 'cdops-blogs',
   trailingSlash: 'always',
   integrations: [
     tailwind(),
