@@ -1,13 +1,13 @@
 # About
 <!-- This is the demo site for [Fuwari](https://github.com/saicaca/fuwari). -->
-:::important
+:::note
 The official GitHub repository for this website.
 :::
 ::github{repo="gtamilvanan17/cdops-blogs"}
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/gtamilvanan17/cdops-blogs/refs/heads/master/src/assets/images/image.png" alt="cdops-logo" width="200px" height="200px"/>
-  <a class="link text-[var(--primary)] font-medium" target="_blank" >CD OPS</a> is a platform/website🌐, where you can find blogs/writeups/docs📝 related to linux, devops, cloud-computing, networking and all about technology💻
+  <a class="link text-[var(--primary)] font-medium" target="_blank" ><b>🖥️ CD OPS</a></b> is a platform/website🌐, where you can find blogs/writeups/docs📝 related to linux, devops, cloud-computing, networking and all about technology💻
   <br>
 </p>
 
