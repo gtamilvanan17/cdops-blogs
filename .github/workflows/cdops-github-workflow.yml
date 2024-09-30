@@ -21,12 +21,10 @@ jobs:
 
     - name: Copy files from source to destination
       run: |
-        pwd && ls -lla
-        echo "View of file1"
-        cat ${{ github.workspace }}/astro.config.mjs
+        cat ${{ github.workspace }}/astro.config.mjs | grep "site:"
         cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
         echo "View of file2"
-        cat ${{ github.workspace }}/astro.config.github.mjs
+        cat ${{ github.workspace }}/astro.config.mjs | grep "site:"
 
     - name: Install, build, and upload your site output
       uses: withastro/action@v2
