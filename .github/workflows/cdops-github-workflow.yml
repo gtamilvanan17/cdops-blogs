@@ -21,7 +21,12 @@ jobs:
 
     - name: Copy files from source to destination
       run: |
+        pwd && ls -lla
+        echo "View of file1"
+        cat ${{ github.workspace }}/astro.config.mjs
         cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
+        echo "View of file2"
+        cat ${{ github.workspace }}/astro.config.github.mjs
 
     - name: Install, build, and upload your site output
       uses: withastro/action@v2
@@ -50,3 +55,8 @@ jobs:
       with:
         name: astro-build-artifacts-${{ github.run_number }}-${{ github.run_id }} # Include run number and ID for versioning
         path: ${{ github.workspace }}/dist/ # Path to the directory containing your build output (adjust as necessary)
+
+    - name: Copy files from source to destination
+      run: |
+        pwd && ls -lla
+        ls -lla ${{ github.workspace }}/dist/

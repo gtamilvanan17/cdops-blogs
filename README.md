@@ -9,7 +9,7 @@ A static blog template built with [Astro](https://astro.build).
 
 <!-- ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png) -->
 <p align="center">
-  <img src="https://github.com/gtamilvanan17/cdops-blogs/blob/master/src/assets/images/Logo.png" alt="cdops-logo" width="200px" height="200px"/>
+  <img src="https://raw.githubusercontent.com/gtamilvanan17/cdops-blogs/refs/heads/master/src/assets/images/logo.png" alt="cdops-logo" width="200px" height="200px"/>
   <br><b>
   CD OPS is a platform/website🌐 for posting blogs/writeups/docs📝 related to<br>linux, devops, cloud-computing, networking and all about technology💻
   <br>
