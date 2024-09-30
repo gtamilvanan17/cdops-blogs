@@ -19,13 +19,6 @@ jobs:
     - name: Checkout your repository using git
       uses: actions/checkout@v4
 
-    - name: Copy files from source to destination
-      run: |
-        cat ${{ github.workspace }}/astro.config.mjs | grep "site:"
-        cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
-        echo "View of file2"
-        cat ${{ github.workspace }}/astro.config.mjs | grep "site:"
-
     - name: Install, build, and upload your site output
       uses: withastro/action@v2
       with:
@@ -44,15 +37,11 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v4
 
-  publish_the_app:
-    needs: deploy_the_app
-    runs-on: ubuntu-latest
-    steps:
-    - name: Publish the Artifacts
+    - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: astro-build-artifacts-${{ github.run_number }}-${{ github.run_id }} # Include run number and ID for versioning
-        path: ${{ github.workspace }}/dist/ # Path to the directory containing your build output (adjust as necessary)
+        name: cdops-build-artifacts-${{ github.run_number }}-${{ github.run_id }}
+        path: ${{ github.workspace }}/dist/
 
     - name: Copy files from source to destination
       run: |
