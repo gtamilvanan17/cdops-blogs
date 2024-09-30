@@ -55,7 +55,7 @@ export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/image.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'CD OPS',
   bio: 'Cheers, Happy Learning!',
-  links: [                                          // `pnpm add @iconify-json/<icon-set-name>`
+  links: [                                            // `pnpm add @iconify-json/<icon-set-name>`
     {
       name: 'Linked In',
       icon: 'fa6-brands:linkedin',
@@ -75,7 +75,7 @@ export const profileConfig: ProfileConfig = {
       name: 'X Official',
       icon: 'fa6-brands:x-twitter',                 // Visit https://icones.js.org/ for icon codes
       url: 'https://twitter.com/GTamilvananOff',    // You will need to install the corresponding icon set if it's not already included
-    },   
+    },  
     {
       name: 'E-Mail',
       icon: 'fa6-solid:envelope',
