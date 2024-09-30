@@ -4,7 +4,7 @@ on:
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [dev]
+    branches: [master]
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
