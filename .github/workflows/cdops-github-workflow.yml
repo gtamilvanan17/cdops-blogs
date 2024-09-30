@@ -30,12 +30,6 @@ jobs:
         node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
         package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: cdops-build-artifacts-${{ github.run_number }}-${{ github.run_id }}
-        path: ${{ github.workspace }}/dist/
-
   deploy_the_app:
     needs: build_the_app
     runs-on: ubuntu-latest
