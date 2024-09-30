@@ -49,4 +49,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: astro-build-artifacts-${{ github.run_number }}-${{ github.run_id }} # Include run number and ID for versioning
-        path: ./dist # Path to the directory containing your build output (adjust as necessary)
+        path: ${{ github.workspace }}/dist/ # Path to the directory containing your build output (adjust as necessary)
