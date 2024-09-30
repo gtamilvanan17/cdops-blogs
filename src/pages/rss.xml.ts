@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: siteConfig.title,
     description: siteConfig.subtitle || 'No description',
-    site: context.site ?? 'https://cdops-blogs.onrender.com',
+    site: context.site ?? 'https://cdops.is-a.dev',
     items: blog.map(post => {
       const body = typeof post.data.body === 'string' ? post.data.body : ''
       return {

@@ -5,7 +5,7 @@ description: 'All about file and directory modes and permissions'
 image: 'image.png'
 tags: [linux,perminssions]
 category: 'Linux'
-draft: true
+draft: false
 ---
 :::important
 All the tutorials/steps provided here is only for educational purpose. Use/practise them wisely.
