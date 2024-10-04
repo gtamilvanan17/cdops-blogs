@@ -23,6 +23,12 @@ README Version: `2024-09-30`
 </div>
 
 
+### Environments
+
+-  [Production](https://cdops.is-a.dev)
+-  [Development](https://cdops-blogs-9tzn.onrender.com)
+
+
 ### License
 
 **CDOPS** is licensed under the **[MIT License](LICENSE)**.
@@ -38,5 +44,3 @@ README Version: `2024-09-30`
 <br>
 
 #### © 2024 CD OPS. All Rights Reserved.
-**Powered by <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> & <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari 🔥</a>**
-**Presented by <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://gtamilvanan17.github.io/portfolio">Tamilvanan Gowran 😊</a>**
