@@ -1,4 +1,4 @@
-name: CDOPS GITHUB DEV
+name: Github Actions
 
 on:
   push:
