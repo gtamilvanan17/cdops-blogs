@@ -38,3 +38,32 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+
+  docker_build_push:
+    needs: deploy_the_app
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASS_TOKEN }}
+      DOCKER_IMAGE_NAME: cdops
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Login to Docker Hub
+      run: echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+
+    - name: Build Docker image
+      run: docker build -t "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER . && docker push "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER
+
+    - name: Push Docker image to Docker Hub
+      run: docker tag "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":$GITHUB_RUN_NUMBER "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":latest && docker push "${DOCKER_USERNAME}"/"${DOCKER_IMAGE_NAME}":latest
+
+    - name: Listing images and Containers.
+      run: docker images && docker ps -a
+
+    - name: Docker Logout
+      run: docker logout
