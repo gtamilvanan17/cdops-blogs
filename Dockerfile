@@ -22,7 +22,7 @@ COPY . .
 # Build React app
 RUN npm run build
 
-# Use Nginx as the base image for serving the built React app
+# Use Nginx as the base image for serving the built Astro app
 FROM nginx:alpine
 
 # Copy built app from the previous stage

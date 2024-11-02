@@ -1,11 +1,11 @@
 ---
-title: Ngrok and its usecase
+title: Ngrok configuration and its usecase
 published: 2024-06-05
-description: ''
+description: 'Ngrok create secure tunnels to your localhost, enabling you to expose a local server to the internet.'
 image: 'image.png'
-tags: [linux,ngrok]
+tags: [linux]
 category: 'Linux'
-draft: true
+draft: false
 ---
 <br>
 
@@ -60,4 +60,4 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 - Now you can access your application using the public domain **https://abcd1234.ngrok.io**, which is running in your local server.
 
 ### Conclusion
-That's it! You've successfully set up and run ngrok on a Linux system to expose a local server to the internet. You can now share the public URL provided by ngrok to give others access to your local server. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
+That's it! You've successfully set up and run ngrok on a Linux system to expose a local server to the internet. You can now share the public URL provided by ngrok to give others access to your local server. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.

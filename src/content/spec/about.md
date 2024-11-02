@@ -13,12 +13,12 @@ The official GitHub repository for this website.
 
 <br>
 
-> ### Follow us on below mediums.
-> - [Instagram](https://instagram.com/cdops_official)
-> - [Hashnode](https://cdops1official.hashnode.dev/)
-> - [Medium](https://cdops1official.medium.com/)
-> - [Linked In](https://linkedin.com/in/gtamilvanan17)
-> - [Twitter](https://x.com/GTamilvananOff)
+### Follow us on below mediums.
+- [Instagram](https://instagram.com/cdops_official)
+- [Hashnode](https://cdops1official.hashnode.dev/)
+- [Medium](https://cdops1official.medium.com/)
+- [Linked In](https://linkedin.com/in/gtamilvanan17)
+- [Twitter](https://x.com/GTamilvananOff)
 
 <br>
 

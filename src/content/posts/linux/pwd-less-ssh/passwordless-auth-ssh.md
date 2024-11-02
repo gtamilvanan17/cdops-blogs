@@ -3,9 +3,9 @@ title: Set Up Passwordless SSH Authentication among Linux machines
 published: 2024-05-31
 description: 'Setting up password less authentication system among Linux machines'
 image: 'image.png'
-tags: [linux,ssh]
+tags: [linux]
 category: 'Linux'
-draft: true
+draft: false
 ---
 <br>
 
@@ -78,4 +78,4 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 
 ### Conclusion
-That's it! You've successfully configured the passwordless authentication from your local machine to remote machines. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
+That's it! You've successfully configured the passwordless authentication from your local machine to remote machines. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.

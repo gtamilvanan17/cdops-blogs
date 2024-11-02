@@ -1,17 +1,13 @@
 ---
 title: Set default version for python
 published: 2024-06-03
-description: ''
-image: ''
-tags: [linux, python]
+description: 'Set up the default version for python in linux machines.'
+image: 'image.png'
+tags: [python]
 category: 'Linux'
 draft: false
 ---
 <br>
-
-:::important
-All the tutorials/steps provided here is only for educational purpose. Use/practise them wisely.
-:::
 
 ### Set default version for python in debina/ubuntu machines.
 1. Check Installed Python Version
@@ -53,4 +49,4 @@ By following these steps, you can ensure that the python command on your Ubuntu 
 :::
 
 ### Conclusion
-That's it! You've learnt, how to setup the default version for python in linux machines. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
+That's it! You've learnt, how to setup the default version for python in linux machines. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
