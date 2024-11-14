@@ -41,4 +41,4 @@ netsh wlan show profiles name="Tommy" key=clear
 - You can find the password for the specific wifi network name `Tommy` in `Security settings`
 
 ### Conclusion
-That's it! You've learnt, how to retrive a saved password from your windows machine using command prompt. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+That's it! You've learnt, how to retrive a saved password from your windows machine using command prompt. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.

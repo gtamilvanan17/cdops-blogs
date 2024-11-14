@@ -38,4 +38,4 @@ drwxr-x---:  A directory that is accessible by its group
 ```
 
 ### Conclusion
-That's it! You've learnt, what is file permissions and applications of them. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+That's it! You've learnt, what is file permissions and applications of them. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.

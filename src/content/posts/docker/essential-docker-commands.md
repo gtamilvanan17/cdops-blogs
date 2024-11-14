@@ -43,5 +43,5 @@ Docker makes it easy to package and run applications in any environment by using
 <br>
 
 :::note[Conclusion]
-This is it! You've learnt the basic essential docker commands. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+This is it! You've learnt the basic essential docker commands. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.
 :::

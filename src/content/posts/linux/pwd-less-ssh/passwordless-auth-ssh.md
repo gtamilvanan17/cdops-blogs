@@ -78,4 +78,4 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 
 ### Conclusion
-That's it! You've successfully configured the passwordless authentication from your local machine to remote machines. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+That's it! You've successfully configured the passwordless authentication from your local machine to remote machines. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.

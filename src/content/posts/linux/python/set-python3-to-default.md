@@ -49,4 +49,4 @@ By following these steps, you can ensure that the python command on your Ubuntu 
 :::
 
 ### Conclusion
-That's it! You've learnt, how to setup the default version for python in linux machines. If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+That's it! You've learnt, how to setup the default version for python in linux machines. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.
