@@ -1,11 +1,13 @@
-<b>README VERSION: `2024-10-15` </b>
+![Profile Views](https://komarev.com/ghpvc/?username=test&label=Profile%20Views)
+![README Version](https://img.shields.io/badge/Version-v3-blue.svg?label=README%20Version)
+![README Date](https://img.shields.io/badge/Date-2024--10--15-blue.svg?label=README%20Date)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/gtamilvanan17/cdops-blogs/refs/heads/master/src/assets/images/home.png" alt="cdops-logo" width="200px" height="200px"/>
   <br>
   <b>🖥️ CD OPS</b> is a platform/website🌐 for posting blogs/writeups/docs📝 related to<br>linux, devops, cloud-computing, networking and all about technology💻.
   <br>
 </p>
-
 
 <div align="center">
   
@@ -34,18 +36,25 @@
 
 <br>
 
-### License
+### Ask Me Anything...
 
-**CDOPS** is licensed under the **[MIT License](LICENSE)**.
+[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg?color=blue&logo=groupme&logoColor=white)](https://github.com/gtamilvanan17/cdops-blogs/issues/new?assignees=&labels=&projects=&template=bug_report.md)
 
 <br>
 
-> ### Follow us on below mediums.
-> - [Instagram](https://instagram.com/cdops_official)
-> - [Hashnode](https://cdops1official.hashnode.dev/)
-> - [Medium](https://cdops1official.medium.com/)
-> - [Linked In](https://linkedin.com/in/gtamilvanan17)
-> - [Twitter](https://x.com/GTamilvananOff)
+### Follow us on Socials 🌐
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/gtamilvanan17)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@https://medium.com/@cdops_official) 
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/test123)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/gtamilvanan17) 
+![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/GTamilvananOff)
+
+<br>
+
+### Support
+
+1. [Found a bug?](https://github.com/NginxProxyManager/nginx-proxy-manager/issues)
+2. [Discussions](https://github.com/NginxProxyManager/nginx-proxy-manager/discussions)
 
 <br>
 

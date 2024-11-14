@@ -3,13 +3,10 @@ title: File permissions in linux
 published: 2024-06-05
 description: 'All about file and directory modes and permissions'
 image: 'image.png'
-tags: [linux,perminssions]
+tags: [linux]
 category: 'Linux'
-draft: true
+draft: false
 ---
-:::important
-All the tutorials/steps provided here is only for educational purpose. Use/practise them wisely.
-:::
 
 - In Linux, every file is owned by a `single user` and a `single group`, and has its `own access permissions`.
 - Let’s look at how to view the ownership and permissions of a file.
@@ -41,4 +38,4 @@ drwxr-x---:  A directory that is accessible by its group
 ```
 
 ### Conclusion
-That's it! You've learnt, what is file permissions and applications of them. If you have any doubts/issues/errors with the above contents, feel free to contact me through e-mail. Cheers, Happy learning.
+That's it! You've learnt, what is file permissions and applications of them. If you have any doubts/issues/errors with the above contents, `feel free to contact me`. Cheers, Happy learning.
