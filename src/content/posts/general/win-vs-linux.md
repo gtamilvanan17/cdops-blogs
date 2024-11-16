@@ -5,7 +5,7 @@ description: 'Windows excels in usability; Linux thrives in flexibility.'
 image: 'windowsvslinux.png'
 tags: [general]
 category: 'General'
-draft: true 
+draft: false
 lang: ''
 ---
 

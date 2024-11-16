@@ -2,7 +2,7 @@
 title: Retrive wifi passwords in windows
 published: 2024-06-05
 description: 'Retrive wifi passwords in windows in terminal using netsh'
-image: 'image.jpg'
+image: '../assets/retrive-wifi-pwd/image.jpg'
 tags: [windows]
 category: 'Windows'
 draft: false
@@ -18,7 +18,7 @@ All the tutorials/steps provided here is only for educational purpose. Use/pract
 ```shell
 netsh wlan show profiles
 ```
-![alt text](image-1.png)
+![alt text](../assets/retrive-wifi-pwd/image-1.png)
 
 - In the above picture, you can see that, all the networks my machine connected to, are listing.
 - Here, note the network name, for which you wanted to retrive the password and then go for step 2. 
@@ -36,7 +36,7 @@ I wish to retrive password for the network "Tommy".
 
 netsh wlan show profiles name="Tommy" key=clear
 ```
-![alt text](image-2.png)
+![alt text](../assets/retrive-wifi-pwd/image-2.png)
 
 - You can find the password for the specific wifi network name `Tommy` in `Security settings`
 
