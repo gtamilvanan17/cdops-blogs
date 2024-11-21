@@ -80,7 +80,7 @@ export const profileConfig: ProfileConfig = {
       name: 'X Official',
       icon: 'fa6-brands:x-twitter',                 // Visit https://icones.js.org/ for icon codes
       url: 'https://twitter.com/GTamilvananOff',
-    },
+    }
   ],
 }
 

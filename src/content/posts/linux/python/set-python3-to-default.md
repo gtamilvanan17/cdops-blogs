@@ -5,7 +5,7 @@ description: 'Set up the default version for python in linux machines.'
 image: 'image.png'
 tags: [python]
 category: 'Linux'
-draft: false
+draft: true
 ---
 <br>
 
