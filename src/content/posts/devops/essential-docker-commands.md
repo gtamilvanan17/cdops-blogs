@@ -2,10 +2,10 @@
 title: Essential Docker Commands
 published: 2024-11-01
 description: 'Most essential docker commands that helps every DevOps Guy.'
-image: 'image.svg'
+image: '../assets/devops/docker/docker.jpg'
 tags: [docker]
-category: 'Docker'
-draft: false 
+category: 'DevOps'
+draft: true
 lang: ''
 ---
 

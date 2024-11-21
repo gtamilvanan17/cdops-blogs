@@ -5,7 +5,7 @@ description: 'Ngrok create secure tunnels from localhost to the internet.'
 image: 'image.png'
 tags: [linux]
 category: 'Linux'
-draft: false
+draft: true
 ---
 <br>
 
