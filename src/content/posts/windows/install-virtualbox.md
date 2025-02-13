@@ -5,7 +5,7 @@ description: 'This blog post will walk you through the process of installing Vir
 image: '../assets/vb-windows-install.png'
 tags: [windows, virtualization]
 category: 'Virtualization'
-draft: true
+draft: false
 lang: ''
 ---
 VirtualBox is a powerful open-source virtualization software that allows you to run multiple operating systems on your Windows machine simultaneously. Whether you want to test a new OS, develop in a different environment, or enhance security through sandboxing, VirtualBox is a great choice.

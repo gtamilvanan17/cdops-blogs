@@ -5,7 +5,7 @@ description: 'A powerful open-source platform for managing VMs and containers.'
 image: './proxmox/proxmox.png'
 tags: [linux]
 category: 'Linux'
-draft: true
+draft: false
 lang: ''
 ---
 

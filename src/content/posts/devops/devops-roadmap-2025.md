@@ -5,7 +5,7 @@ description: ''
 image: '../assets/devops/devops-roadmap/devops-roadmap.png'
 tags: [devops]
 category: 'DevOps'
-draft: true 
+draft: false
 lang: ''
 ---
 ## 1. Understand the Basics

@@ -5,7 +5,7 @@ description: 'Let’s explore the key phases and lifecycle of DevOps and their s
 image: '../assets/devops/devops-lifecycle/devops-lifecycle.jpg'
 tags: [devops]
 category: 'DevOps'
-draft: true 
+draft: false 
 lang: ''
 ---
 ## 1. Plan

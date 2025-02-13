@@ -5,7 +5,7 @@ description: 'Most essential kubernetes commands that helps every DevOps Guy.'
 image: '../assets/devops/kubernetes/essential-kubernetes-commands.png'
 tags: [kubernetes]
 category: 'DevOps'
-draft: true
+draft: false
 lang: ''
 ---
 

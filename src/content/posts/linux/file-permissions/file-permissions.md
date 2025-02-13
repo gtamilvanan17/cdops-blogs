@@ -5,7 +5,7 @@ description: 'All about file and directory modes and permissions'
 image: 'image.png'
 tags: [linux]
 category: 'Linux'
-draft: true
+draft: false
 ---
 
 - In Linux, every file is owned by a `single user` and a `single group`, and has its `own access permissions`.

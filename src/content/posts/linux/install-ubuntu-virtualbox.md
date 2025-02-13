@@ -5,7 +5,7 @@ description: 'Ubuntu is a popular Linux distribution to get practiced with Linux
 image: ''
 tags: [linux]
 category: 'Linux'
-draft: true 
+draft: false 
 lang: ''
 ---
 Learn how to install `Ubuntu 22.04` in `VirtualBox` with this quick guide. Set up a virtual machine to explore Ubuntu's powerful features in a safe, sandboxed environment.
