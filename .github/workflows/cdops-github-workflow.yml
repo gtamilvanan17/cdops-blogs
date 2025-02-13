@@ -3,6 +3,8 @@ name: Github Actions
 on:
   push:
     branches: [master]
+    paths-ignore:
+      - 'README.md'
 
 # Allow this job to clone the repo and create a page deployment
 permissions:

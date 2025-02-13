@@ -13,15 +13,14 @@ The official GitHub repository for this website.
 
 <br>
 
-### Follow us on below mediums.
-- [Instagram](https://instagram.com/cdops_official)
-- [Hashnode](https://cdops1official.hashnode.dev/)
-- [Medium](https://cdops1official.medium.com/)
-- [Linked In](https://linkedin.com/in/gtamilvanan17)
-- [Twitter](https://x.com/GTamilvananOff)
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/YsdKSVVRTzs" title="CDOPS - Cloud and DevOps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
+
+<div align="center">
 
 #### © 2024 CD OPS. All Rights Reserved.
 **Powered by <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> & <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari 🔥</a>**
 **Presented by <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://gtamilvanan17.github.io/portfolio">Tamilvanan Gowran 😊</a>**
+
+</div>
