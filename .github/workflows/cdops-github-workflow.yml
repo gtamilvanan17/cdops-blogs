@@ -2,7 +2,7 @@ name: Github Actions
 
 on:
   push:
-    branches: [feature-dev]
+    branches: [qa]
     paths-ignore:
       - 'README.md'
 
