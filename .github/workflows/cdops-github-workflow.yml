@@ -13,6 +13,12 @@ permissions:
   id-token: write
 
 jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display copied file
+        run: ls -l config.json
 
   build_the_app:
     runs-on: ubuntu-latest
@@ -20,11 +26,13 @@ jobs:
     - name: Checkout your repository using git
       uses: actions/checkout@v4
 
+    - name: Display copied file
+      run: echo "The action is running in:" ${{ github.ref }}
+
     - name: Copy file for Master branch
       if: github.ref == 'refs/heads/master'
       run: |
-        if [ -f astro.config.render-prod.mjs ]; then
-          echo "$github.ref"
+        if [ -f ${{ github.workspace }}/config/astro.config.render-prod.mjs ]; then
           echo "Found master config"
           cp -R ${{ github.workspace }}/config/astro.config.render-prod.mjs ${{ github.workspace }}/astro.config.mjs
           echo "Copied master-config."
@@ -36,8 +44,7 @@ jobs:
     - name: Copy file for QA branch
       if: github.ref == 'refs/heads/qa'
       run: |
-        if [ -f astro.config.github.mjs ]; then
-          echo "$github.ref"
+        if [ -f ${{ github.workspace }}/config/astro.config.github.mjs ]; then
           echo "Found qa config"
           cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
           echo "Copied qa-config."
