@@ -20,18 +20,30 @@ jobs:
     - name: Checkout your repository using git
       uses: actions/checkout@v4
 
-    - name: Copy file for master branch
+    - name: Copy file for Master branch
       if: github.ref == 'refs/heads/master'
       run: |
-        if [ -f master-config.json ]; then
+        if [ -f astro.config.render-prod.mjs ]; then
+          echo "$github.ref"
           echo "Found master config"
           cp -R ${{ github.workspace }}/config/astro.config.render-prod.mjs ${{ github.workspace }}/astro.config.mjs
           echo "Copied master-config."
         else
+          echo "File not found!"
+          exit 0
+        fi
+
+    - name: Copy file for QA branch
+      if: github.ref == 'refs/heads/qa'
+      run: |
+        if [ -f astro.config.github.mjs ]; then
+          echo "$github.ref"
           echo "Found qa config"
           cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
-          echo "Copied qa config"
-        fi
+          echo "Copied qa-config."
+        else
+          echo "File not found!"
+          exit 0
         
     # - name: Copy files from source to destination
     #   run: |
