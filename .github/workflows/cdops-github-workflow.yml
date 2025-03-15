@@ -1,27 +1,49 @@
-name: Github Actions
+name: CDOPS Pipeline - Github Actions
 
 on:
   push:
-    branches: [qa]
+    branches: [master, qa]
     paths-ignore:
       - 'README.md'
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
-  build_the_app:
+  Build_the_app :
     runs-on: ubuntu-latest
     steps:
     - name: Checkout your repository using git
       uses: actions/checkout@v4
 
-    - name: Copy files from source to destination
+    - name: Display copied file
+      run: echo "The action is running in:" ${{ github.ref }} && ls -lla
+
+    - name: Copy file for Master branch
+      if: github.ref == 'refs/heads/master'
       run: |
-        cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
+        if [ -f ${{ github.workspace }}/config/astro.config.render-prod.mjs ]; then
+          echo "Found master config"
+          cp -R ${{ github.workspace }}/config/astro.config.render-prod.mjs ${{ github.workspace }}/astro.config.mjs
+          echo "Copied master-config."
+        else
+          echo "File not found!"
+          exit 0
+        fi
+
+    - name: Copy file for QA branch
+      if: github.ref == 'refs/heads/qa'
+      run: |
+        if [ -f ${{ github.workspace }}/config/astro.config.github.mjs ]; then
+          echo "Found qa config"
+          cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
+          echo "Copied qa-config."
+        else
+          echo "File not found!"
+          exit 0
+        fi
 
     - name: Install, build, and upload your site output
       uses: withastro/action@v2
@@ -30,8 +52,8 @@ jobs:
         node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
         package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
-  deploy_the_app:
-    needs: build_the_app
+  Deploy_the_app:
+    needs: Build_the_app
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -41,8 +63,8 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v4
 
-  docker_build_push:
-    needs: deploy_the_app
+  Docker_build_push:
+    needs: Deploy_the_app
     runs-on: ubuntu-latest
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
