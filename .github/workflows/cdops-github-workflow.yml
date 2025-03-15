@@ -13,15 +13,38 @@ permissions:
   id-token: write
 
 jobs:
+
   build_the_app:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout your repository using git
       uses: actions/checkout@v4
 
-    - name: Copy files from source to destination
+    - name: Copy file for master branch
+      if: github.ref == 'refs/heads/master'
       run: |
-        cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
+        if [ -f master-config.json ]; then
+          cp -R ${{ github.workspace }}/config/astro.config.render-prod.mjs ${{ github.workspace }}/astro.config.mjs
+          echo "Copied master-config"
+        else
+          echo "master-config not found!"
+          exit 1
+        fi
+      
+    - name: Copy file for QA branch
+      if: github.ref == 'refs/heads/qa'
+      run: |
+        if [ -f qa-config.json ]; then
+          cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
+          echo "Copied qa-config"
+        else
+          echo "qa-config not found!"
+          exit 1
+        fi    
+        
+    # - name: Copy files from source to destination
+    #   run: |
+    #     cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
 
     - name: Install, build, and upload your site output
       uses: withastro/action@v2
