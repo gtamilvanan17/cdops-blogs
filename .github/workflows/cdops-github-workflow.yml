@@ -24,23 +24,14 @@ jobs:
       if: github.ref == 'refs/heads/master'
       run: |
         if [ -f master-config.json ]; then
+          echo "Found master config"
           cp -R ${{ github.workspace }}/config/astro.config.render-prod.mjs ${{ github.workspace }}/astro.config.mjs
-          echo "Copied master-config"
+          echo "Copied master-config."
         else
-          echo "master-config not found!"
-          exit 1
-        fi
-      
-    - name: Copy file for QA branch
-      if: github.ref == 'refs/heads/qa'
-      run: |
-        if [ -f qa-config.json ]; then
+          echo "Found qa config"
           cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
-          echo "Copied qa-config"
-        else
-          echo "qa-config not found!"
-          exit 1
-        fi    
+          echo "Copied qa config"
+        fi
         
     # - name: Copy files from source to destination
     #   run: |
