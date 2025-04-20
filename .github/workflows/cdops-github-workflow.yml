@@ -55,6 +55,7 @@ jobs:
   Deploy_the_app:
     needs: Build_the_app
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/qa'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
