@@ -2,7 +2,7 @@ name: CDOPS - Github Actions
 
 on:
   push:
-    branches: [master, github]
+    branches: [master, sandbox]
     paths-ignore:
       - 'README.md'
 
@@ -33,13 +33,13 @@ jobs:
           exit 0
         fi
 
-    - name: Copy file for github branch
-      if: github.ref == 'refs/heads/github'
+    - name: Copy file for sandbox branch
+      if: github.ref == 'refs/heads/sandbox'
       run: |
         if [ -f ${{ github.workspace }}/config/astro.config.github.mjs ]; then
-          echo "Found github config"
+          echo "Found sandbox config"
           cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
-          echo "Copied github-config."
+          echo "Copied sandbox-config."
         else
           echo "File not found!"
           exit 0
@@ -55,7 +55,7 @@ jobs:
   Deploy_the_app:
     needs: Build_the_app
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/github'
+    if: github.ref == 'refs/heads/sandbox'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -65,7 +65,7 @@ jobs:
       uses: actions/deploy-pages@v4
 
   Docker_build_push:
-    needs: Deploy_the_app
+    needs: Build_the_app
     runs-on: ubuntu-latest
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
