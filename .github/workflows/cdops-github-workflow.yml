@@ -2,7 +2,7 @@ name: CDOPS - Github Actions
 
 on:
   push:
-    branches: [master, qa]
+    branches: [master, github]
     paths-ignore:
       - 'README.md'
 
@@ -33,13 +33,13 @@ jobs:
           exit 0
         fi
 
-    - name: Copy file for QA branch
-      if: github.ref == 'refs/heads/qa'
+    - name: Copy file for github branch
+      if: github.ref == 'refs/heads/github'
       run: |
         if [ -f ${{ github.workspace }}/config/astro.config.github.mjs ]; then
-          echo "Found qa config"
+          echo "Found github config"
           cp -R ${{ github.workspace }}/config/astro.config.github.mjs ${{ github.workspace }}/astro.config.mjs
-          echo "Copied qa-config."
+          echo "Copied github-config."
         else
           echo "File not found!"
           exit 0
@@ -55,7 +55,7 @@ jobs:
   Deploy_the_app:
     needs: Build_the_app
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/qa'
+    if: github.ref == 'refs/heads/github'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
