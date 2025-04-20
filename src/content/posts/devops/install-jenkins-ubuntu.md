@@ -5,7 +5,7 @@ description: ''
 image: 'https://mirror.bom.albony.in/jenkins/art/jenkins-logo/1024x1024/headshot.png'
 tags: [linux,jenkins]
 category: 'DevOps'
-draft: true 
+draft: false 
 lang: ''
 ---
 
