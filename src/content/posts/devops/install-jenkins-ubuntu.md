@@ -70,5 +70,5 @@ Paste the output of above command into the Jenkins setup wizard to unlock Jenkin
 
 :::note[Conclusion]
 This is it! You’ve now successfully installed Jenkins with Java! 🎉
-From here, you can begin configuring Jenkins, installing plugins, and setting up your first pipelines. Happy automating! If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy learning.
+From here, you can begin configuring Jenkins, installing plugins, and setting up your first pipelines. Happy automating! If you have any doubts/issues/errors with the above contents, feel free to contact me. Cheers, Happy automating!
 :::
