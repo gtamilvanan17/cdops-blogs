@@ -2,7 +2,7 @@ name: CDOPS - Github Actions
 
 on:
   push:
-    branches: [master, qa]
+    branches: [qa]
     paths-ignore:
       - 'README.md'
 
