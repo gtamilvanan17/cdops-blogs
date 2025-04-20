@@ -65,7 +65,7 @@ jobs:
       uses: actions/deploy-pages@v4
 
   Docker_build_push:
-    needs: Deploy_the_app
+    # needs: Deploy_the_app
     runs-on: ubuntu-latest
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
